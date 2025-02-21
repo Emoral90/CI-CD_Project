@@ -36,5 +36,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install dependencies
         run: |
-          py pip install --upgrade pip
           pip install pytest

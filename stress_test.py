@@ -1,3 +1,5 @@
+# Run in integrated terminal with "py stress_test.py"
+
 import requests
 import concurrent.futures
 import time
@@ -12,7 +14,7 @@ def make_request(endpoint):
     except requests.exceptions.RequestException as e:
         return str(e)
 
-def stress_test_concurrent_requests(endpoint, num_requests=100):
+def stress_test_concurrent_requests(endpoint, num_requests=1000):
     """Stress test by making multiple concurrent requests."""
     start_time = time.time()
     
@@ -31,6 +33,6 @@ def stress_test_concurrent_requests(endpoint, num_requests=100):
 if __name__ == "__main__":
     # Run stress tests on different endpoints
     stress_test_concurrent_requests("/")  # Top-level API
-    stress_test_concurrent_requests("/people/1", 200)  # Valid ID
-    stress_test_concurrent_requests("/people/9999", 100)  # Invalid ID
-    stress_test_concurrent_requests("/unknown", 50)  # Invalid endpoint
+    stress_test_concurrent_requests("/people/1", 2000)  # Valid ID
+    stress_test_concurrent_requests("/people/9999", 1000)  # Invalid ID
+    stress_test_concurrent_requests("/unknown", 500)  # Invalid endpoint

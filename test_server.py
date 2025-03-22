@@ -1,11 +1,22 @@
+# Run server.py in CMD by cd into
+# "C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project>" with "py server.py"
+
+# HTTP codes
+# 200 OK
+# 201 Created
+# 204 No content
+# 301 Moved permanently
+# 400 Bad Request
+# 401 Unauthorized
+# 403 Forbidden
+# 404 Not found
+# 405 Method not allowed
+# 500 Internal server error
+
 import pytest
 import requests
 
 BASE_URL = "http://127.0.0.1:8790"
-
-
-# Run server.py in CMD by cd into
-# "C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project>" with "py server.py"
 
 
 @pytest.fixture
@@ -13,6 +24,7 @@ def server_url():
     return BASE_URL
 
 def test_top_level_url(server_url):
+    """Test root URL structure matches individual category URLs"""
     response = requests.get(server_url + "/")
     assert response.status_code == 200
     data = response.json()
@@ -43,3 +55,14 @@ def test_non_numeric_id():
     """Test non-numeric ID in a valid category."""
     response = requests.get(f"{BASE_URL}/people/abc")
     assert response.status_code == 404
+
+def main():
+    base_url = server_url()
+    test_top_level_url(base_url)
+    test_valid_people_entry()
+    test_invalid_people_entry()
+    test_invalid_category()
+    test_non_numeric_id()
+
+if __name__ == "__main__":
+    main()

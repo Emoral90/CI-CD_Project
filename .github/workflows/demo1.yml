@@ -22,26 +22,26 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # - name: Set up Python
-      #   uses: actions/setup-python@v4
-      #   with:
-      #     python-version: '3.12'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
 
-      # - name: Install dependencies
-      #   run: |
-      #     pip install --upgrade pip
-      #     pip install requests pytest
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install requests pytest
 
       - name: Start local API server
         run: |
-          py server.py &
+          python3 server.py &
           sleep 3 # Wait for server to start up
 
       - name: Run API tests
         run: pytest test_server.py
 
       - name: Run stress tests
-        run: py stress_test.py
+        run: python3 stress_test.py
 
-      # - name: Stop server running in background
-      #   run: pkill -f server.py || true
+      - name: Stop server running in background
+        run: pkill -f server.py || true

@@ -1,5 +1,4 @@
-# Run server.py in CMD by cd into
-# "C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project>" with "py server.py"
+# Run server.py in CMD by cd into dir with server, with "pytest server.py"
 
 # HTTP codes
 # 200 OK
@@ -17,7 +16,6 @@ import pytest
 import requests
 
 BASE_URL = "http://127.0.0.1:8790"
-
 
 @pytest.fixture
 def server_url():

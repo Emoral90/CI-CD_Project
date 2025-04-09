@@ -1,0 +1,602 @@
+Hands-on GitHub Actions
+
+Chapter 1 Intro to Github Actions
+1. Introduction to GitHub Actions
+	GitHub is a widely used platform for version control and collaboration.
+	Traditionally, CI/CD required third-party tools like Azure Pipelines, but GitHub Actions now enables automation directly within GitHub.
+	This chapter provides an overview of CI/CD and introduces GitHub Actions concepts.
+
+2. Continuous Integration (CI) & Continuous Delivery (CD)
+	Continuous Integration (CI):
+		Ensures the latest code compiles without errors.
+		Runs unit tests to maintain code stability.
+		A CI build pipeline automatically compiles and tests code on every commit.
+	Continuous Delivery (CD):
+		Ensures software can be reliably deployed at any time.
+		Reduces costs and risks by automating release processes.
+		Requires a well-defined, repeatable deployment process.
+	Continuous Deployment (CDP):
+		Extends continuous delivery by automating production deployments.
+		Requires a fully automated pipeline with no manual approval steps.
+
+3. Importance of Software Delivery Automation
+	Automating software delivery improves efficiency, security, and reliability.
+	CI ensures:
+		Code compiles successfully.
+		Unit tests pass at a high percentage.
+		Automation reduces manual deployment errors, preventing costly production issues.
+		Early vulnerability detection ("shift-left" approach) lowers the cost of fixing security flaws.
+		Test automation prevents bugs from reaching production, saving time and reducing legal/business risks.
+
+4. Introduction to GitHub Actions Concepts
+	Actions:
+		Small, reusable tasks in a workflow (e.g., checkout code, run tests).
+		Can be custom-built or sourced from GitHub Marketplace.
+	Artifacts:
+		Files produced by builds, tests, or deployments.
+		Can be shared between jobs in a workflow.
+	Events:
+		Triggers that start a workflow (e.g., push, pull_request).
+		Can also be external webhooks like repository_dispatch.
+	GitHub-Hosted Runners:
+		Preconfigured virtual machines (Windows, Linux, macOS).
+		Automatically provisioned but not customizable.
+	Self-Hosted Runners:
+		User-managed machines for specific hardware/software needs.
+		Useful for custom environments and private infrastructure.
+	Jobs:
+		A group of actions executed on a single runner.
+		Can run in parallel or sequentially (with dependencies).
+	Steps:
+		Individual tasks within a job (either an action or a command).
+		Share filesystem state within the same job.
+	Workflow:
+		A YAML-defined automation process stored in .github/workflows/.
+		Can define multiple jobs running under different conditions.
+	Workflow Run:
+		A single execution of a workflow.
+		Logs help debug failed jobs or monitor workflow performance.
+
+Chapter 2 GitHub actions and workflows
+1. Introduction to GitHub Actions Workflows
+	This section introduces the purpose of GitHub Actions workflows in automating software deployment and delivery pipelines. The key benefits highlighted include:
+
+		Increased efficiency in the software development process
+		Enhanced team productivity
+		Rapid software delivery without compromising quality
+		The chapter aims to cover the essential components of GitHub Actions workflows, their structure, and their role in continuous integration. A sample .NET Core application pipeline is used to illustrate these concepts.
+
+2. Understanding GitHub Actions Workflows
+	GitHub Actions workflows are defined as YAML files containing automated instructions. The key elements that make up a workflow include:
+
+	Jobs: Groups of steps that run on a specified runner
+	Events: Triggers that initiate the workflow
+	Steps: Individual tasks executed within a job
+	Actions: Reusable commands or scripts within a step
+	Runners: Machines where workflows execute
+	Workflows can have multiple jobs, which can run independently or depend on other jobs. Triggers (events) define when workflows should execute.
+
+3. Using Preconfigured Workflow Templates
+	GitHub provides predefined workflow templates to automate build and deployment processes. These templates are accessible through the GitHub repository under the Actions tab.
+
+	Workflow templates cover popular cloud platforms like Azure, AWS, Google Cloud, and IBM Cloud.
+	Clicking “Set up this workflow” opens a YAML template that users can edit.
+	Continuous integration workflow templates exist for multiple programming languages like Ruby, Java, .NET, and Python.
+	These templates include basic build steps, but they can be customized.
+4. Using Marketplace Actions to Create Workflows
+	A GitHub Action is the smallest unit of automation in a workflow. Actions are of two types:
+
+		Marketplace Actions: Prebuilt, publicly available actions from the GitHub Marketplace.
+		Self-Defined Actions: Custom actions created by users.
+	To use a Marketplace action:
+
+		Access the workflow editor.
+		Select an action from the Marketplace.
+		Copy the corresponding YAML script.
+		Paste the script inside the steps section of the workflow YAML file.
+		Configure the action settings, including selecting the correct action version.
+			Example: The Download a Build Artifact action is used to retrieve an artifact from a previous build.
+
+5. Understanding the Structure of a Workflow
+	Users can create workflows manually by navigating to Actions > Set up a workflow yourself.
+
+	A basic workflow structure consists of:
+
+		Workflow name (name: CI)
+		Triggers (events) (on: section, defining push/pull request triggers)
+		Jobs (which run on specific runners)
+		Steps (individual tasks executed within jobs)
+
+	Example YAML Workflow:
+
+yaml
+Copy
+Edit
+name: CI
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+	Key points:
+		The workflow is triggered by push or pull request events.
+		It runs on Ubuntu-latest.
+		Steps include checking out the repository and running scripts.
+	Saving the Workflow File:
+		Workflow files are stored in .github/workflows inside the repository.
+
+	Triggering Workflows Manually:
+		To enable manual triggers, the workflow must include:
+
+yaml
+Copy
+Edit
+on: [workflow_dispatch]
+This allows users to trigger the workflow using the “Run workflow” button.
+
+6. Understanding Runners in Workflows
+	A runner is a machine or container where workflows execute.
+
+	GitHub-Hosted Runners: Provided by GitHub (Ubuntu, Windows, macOS).
+	Self-Hosted Runners: Custom runners set up by users (explained in Chapter 6).
+	Each job specifies a runner using the runs-on keyword:
+
+yaml
+Copy
+Edit
+jobs:
+  mybuild:
+    runs-on: ubuntu-latest
+7. Configuring Job Dependencies
+By default, jobs run in parallel. If a job needs to wait for another job to finish, use the needs keyword.
+
+Example of a dependent job:
+
+yaml
+Copy
+Edit
+jobs:
+  Android:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+  AppCenterDistribute:
+    runs-on: ubuntu-latest
+    needs: Android
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: my-artifact
+Here, AppCenterDistribute only runs after the Android job completes.
+
+8. Using Secrets in Workflows
+	Secrets (like API keys) are stored securely in GitHub Secrets and referenced in workflows.
+
+	Example:
+yaml
+Copy
+Edit
+- name: App Center
+  uses: wzieba/AppCenter-Github-Action@v1.0.0
+  with:
+    token: ${{ secrets.AppCenterAPIToken }}
+This ensures sensitive data is not exposed in the code.
+
+9. Understanding Workflow Runs
+	Workflow runs can be monitored in the GitHub repository under the Actions tab.
+
+	Run History: Shows past executions, including duration, commit details, and status.
+	Build Logs: Clicking a specific run reveals logs for debugging errors.
+	Example Workflow Run Analysis:
+
+		Navigate to Actions.
+		Select a workflow run.
+		Check logs for success/failure messages.
+
+10. Setting Up Continuous Integration (CI) with GitHub Actions
+	CI ensures that code changes are tested and validated before deployment.
+
+	Triggers for CI Pipelines:
+
+		Push events (code commits)
+		Pull requests (new feature branches)
+		Issue creation
+	Example: A CI workflow running on every push to main:
+
+yaml
+Copy
+Edit
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Tests
+        run: npm test
+
+This workflow:
+	Runs on Ubuntu-latest
+	Checks out code from the repository
+	Runs tests using npm test
+
+
+
+Chapter 3 Variables
+1. Overview
+This chapter covers how variables are used in GitHub Actions workflows. It explains:
+
+How to define and scope variables at different levels (workflow, job, and step).
+Default environment variables provided by GitHub Actions.
+Naming conventions and best practices for defining custom variables.
+How to modify variables dynamically using set-env.
+
+2. Defining and Using Variables
+Variables in GitHub Actions can be defined within different scopes:
+
+Workflow Scope - Applies to the entire workflow.
+Job Scope - Limited to a specific job.
+Step Scope - Defined for a single step in a job.
+a. Variables in Workflow Scope
+Defined at the top level using the env: keyword.
+Available throughout the workflow.
+Example
+yaml
+Copy code
+name: VariableDemo
+on: [push]
+env:
+  user_name: "Chaminda"
+  demo_name: "Variable Demo"
+
+jobs:
+  VariableUsageJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Using Workflow Variables
+        run: echo Hello, $user_name! Welcome to $demo_name!!!
+The variables user_name and demo_name are accessible in any job within the workflow.
+b. Variables in Job Scope
+Defined within a job under env:.
+Available only within that job.
+Example
+yaml
+Copy code
+jobs:
+  VariableUsageJob:
+    runs-on: ubuntu-latest
+    env:
+      job_var1: "job variable value"
+The job_var1 variable is only accessible within VariableUsageJob.
+c. Variables in Step Scope
+Defined inside a specific step under env:.
+Only available in that particular step.
+Example
+yaml
+Copy code
+jobs:
+  VariableUsageJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Using Step Variables
+        env:
+          step_var1: "Step Variable Value"
+        run: echo "Step variable: $step_var1"
+step_var1 is only available in this specific step.
+
+3. Modifying Variables with set-env
+The set-env command allows modifying or creating variables dynamically. However, these changes apply only to subsequent steps in a job.
+
+Example
+yaml
+Copy code
+steps:
+  - name: Set user_name Variable
+    run: echo "::set-env name=user_name::Chandrasekara"
+
+  - name: Use Updated Variable
+    run: echo "Hello, $user_name!"
+The first step updates user_name, and the second step uses the new value.
+
+4. Default GitHub Actions Variables
+GitHub Actions provides built-in variables that are automatically available in workflows.
+
+Common Default Variables
+Variable	Description
+CI	Always set to true, indicating the workflow is running in a CI environment.
+HOME	The home directory on the runner machine.
+GITHUB_WORKFLOW	The name of the running workflow.
+GITHUB_RUN_ID	Unique identifier for each workflow run.
+GITHUB_RUN_NUMBER	Incremental run number for the workflow.
+GITHUB_ACTION	Unique ID of the action running in the workflow.
+GITHUB_ACTIONS	Set to true if an action is running in the job.
+GITHUB_ACTOR	The user or app that triggered the workflow.
+GITHUB_REPOSITORY	Repository name in owner/repo format.
+GITHUB_EVENT_NAME	Name of the event that triggered the workflow (e.g., push, pull_request).
+GITHUB_SHA	The commit SHA that triggered the workflow.
+GITHUB_REF	The branch or tag reference for the workflow trigger.
+GITHUB_SERVER_URL	URL of the GitHub server (https://github.com).
+GITHUB_API_URL	GitHub API URL (https://api.github.com).
+These variables are predefined and automatically accessible in all workflows.
+
+5. Additional Predefined Variables
+Some predefined environment variables become available based on the programming language or framework used in a workflow.
+
+For example, when using .NET Core, the DOTNET_ROOT variable becomes available.
+
+Example: Using .NET Core Variables
+yaml
+Copy code
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '2.1.804'
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+      - name: dotnet publish
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+DOTNET_ROOT is used to define the output path.
+
+6. Naming Considerations for Variables
+When defining custom variables, follow these best practices:
+
+a. Reserved Prefix: GITHUB_
+Do not use GITHUB_ for custom variables, as it is reserved for GitHub-provided variables.
+b. Case Sensitivity
+Variable names are case-sensitive. Using inconsistent casing (e.g., myVar vs. MYVAR) will cause errors.
+c. _PATH Suffix for File Paths
+If a variable points to a file path, it's recommended to use the _PATH suffix.
+Example: MY_TOOL_PATH="/usr/local/bin/tool"
+d. Avoid Special Characters
+Use: letters, numbers, and underscores (_).
+Avoid: special characters like @, $, -.
+Variable names must start with a letter and cannot begin with a number.
+Example of Valid and Invalid Variable Names
+Variable Name	Valid?	Reason
+user_name	YES	Uses letters and underscore.
+my1_var1	YES	Contains letters, numbers, and underscores.
+1mynewnumvar	NO	Starts with a number.
+my-var		NO	Uses a dash (-).
+my@newvar@$	NO	Contains special characters.
+
+Chapter 4 Artifacts and Caching Dependencies
+1. Defining and Using Secrets
+Secrets store sensitive data like passwords, API keys, or connection strings to ensure security in CI/CD pipelines. GitHub provides different levels of secrets management:
+
+Repo-Level Secrets
+Defined in the repository’s Settings → Secrets tab.
+Only collaborators with necessary permissions can use them.
+Secrets are not available in forked repositories for security reasons.
+Once created, secrets cannot be viewed again—only updated or deleted.
+Organization-Level Secrets
+Available for private repositories (requires a paid GitHub plan).
+Public repositories can use organization-level secrets within workflows.
+If a secret is defined at both repo and organization levels, the repo-level secret takes precedence.
+Naming Secrets
+Allowed characters: Only alphanumeric characters and underscores (_).
+Restrictions:
+Cannot start with a number.
+Cannot use spaces or special characters.
+GITHUB_ prefix is not allowed (reserved for GitHub system variables).
+Case-sensitive and must be unique at the repo or organization level.
+Using Secrets in Workflows
+Access secrets using the syntax:
+yaml
+Copy code
+${{ secrets.SECRET_NAME }}
+Example:
+yaml
+Copy code
+token: ${{ secrets.AppCenterAPIToken }}
+GitHub automatically redacts secrets in workflow logs.
+2. Limitations of Secrets
+Maximum 100 secrets per workflow.
+Maximum size of 64 KB per secret.
+If a secret exceeds 64 KB, it's recommended to encrypt and store it in the repo instead.
+3. GITHUB_TOKEN
+GitHub automatically provides a built-in authentication token (GITHUB_TOKEN) to manage repo activities without needing a personal access token (PAT).
+
+Permissions of GITHUB_TOKEN
+The default permissions vary depending on whether the workflow runs in a repository or a forked repository.
+
+Permission	Repo Access	Forked Repo Access
+Actions	Read/Write	Read
+Checks	Read/Write	Read
+Contents	Read/Write	Read
+Deployments	Read/Write	Read
+Issues	Read/Write	Read
+Metadata	Read	Read
+Packages	Read/Write	Read
+Pull Requests	Read/Write	Read
+Repository Projects	Read/Write	Read
+Statuses	Read/Write	Read
+Example Use Case:
+GITHUB_TOKEN can be used to create an issue when a workflow step fails.
+Example Workflow: Automatically Creating an Issue on Failure
+A workflow runs on every push.
+One step passes, another step fails (exit 1).
+If failure occurs, an issue is created using GITHUB_TOKEN.
+yaml
+Copy code
+on: [push]
+jobs:
+  FailJobIssueDemo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step is going to pass
+        run: echo Passing step
+      - name: Step is going to fail
+        run: exit 1
+      - name: Step To run on failure
+        if: ${{ failure() }}
+        run: |
+          curl --request POST \
+          --url https://api.github.com/repos/${{ github.repository }}/issues \
+          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          --header 'content-type: application/json' \
+          --data '{
+            "title": "Issue created due to workflow failure: ${{ github.run_id }}",
+            "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**.\n\n Failure in run: _${{ github.run_id }}_."
+            }'
+The if: ${{ failure() }} condition ensures the step runs only if a previous step fails.
+The curl command creates a GitHub issue automatically.
+Alternative: Using Personal Access Tokens (PATs)
+If GITHUB_TOKEN does not have sufficient permissions, a Personal Access Token (PAT) can be manually created and stored as a secret.
+The PAT can then be used in workflows for authentication.
+Conclusion
+GitHub secrets store sensitive data securely in repositories and organizations.
+Repo-level secrets take precedence over organization-level secrets.
+GITHUB_TOKEN is a built-in authentication token for automating GitHub Actions workflows.
+Security Best Practices:
+Avoid printing secrets in logs.
+Use GITHUB_TOKEN where possible instead of PATs.
+Encrypt large secrets if they exceed the 64 KB limit.
+This chapter provides essential knowledge on securing workflows in GitHub Actions, ensuring proper authentication and data protection.
+
+Chapter 6 Using self-hosted runners
+Summary of Chapter 6: Using Self-Hosted Runners
+This chapter discusses setting up self-hosted runners for GitHub Actions, which allow users to run workflows on their own machines instead of GitHub-hosted environments. Self-hosted runners provide more control over hardware, OS, and installed tools, making them suitable for custom software needs or on-premises deployments.
+
+Types of Self-Hosted Runners
+Self-hosted runners can be configured at different levels:
+
+Repository Level – Used only by a specific repository.
+
+Organization Level – Shared across multiple repositories in an organization.
+
+Enterprise Level – Used across multiple organizations in an enterprise GitHub account.
+
+Setting Up a Windows Self-Hosted Runner
+Prerequisites:
+
+A GitHub repository with a .NET 5.0 web app.
+
+A Windows 10 virtual machine (VM) (on Azure or another environment).
+
+An Azure-hosted web app for deployment.
+
+Installation Steps:
+
+Navigate to Settings ➝ Actions in GitHub and add a runner.
+
+Follow the setup instructions for Windows:
+
+Create a directory:
+
+powershell
+Copy
+Edit
+mkdir actions-runner; cd actions-runner
+Download the runner package:
+
+powershell
+Copy
+Edit
+Invoke-WebRequest -Uri <runner_url> -OutFile actions-runner-win-x64.zip
+Extract the package:
+
+powershell
+Copy
+Edit
+Add-Type -AssemblyName System.IO.Compression.FileSystem 
+[System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64.zip", "$PWD")
+Run config.cmd and enter:
+
+GitHub repo URL.
+
+Runner registration token.
+
+A folder for workflow jobs.
+
+Optionally, configure the runner to run as a Windows service.
+
+Executing a Workflow on the Runner:
+
+Define a GitHub Actions workflow that specifies the self-hosted runner:
+
+yaml
+Copy
+Edit
+runs-on: win10demorunner
+The workflow builds and deploys a .NET 5.0 web app to Azure.
+
+Handling Errors:
+
+If encountering script execution policy issues, run:
+
+powershell
+Copy
+Edit
+Set-ExecutionPolicy RemoteSigned
+Setting Up a Linux Self-Hosted Runner
+Prerequisites:
+
+A GitHub repo with a .NET 5.0 web app.
+
+An Ubuntu 18.04 LTS VM (e.g., hosted on Azure).
+
+An Azure-hosted web app.
+
+Installation Steps:
+
+SSH into the Linux VM and create a folder:
+
+bash
+Copy
+Edit
+mkdir actions-runner && cd actions-runner
+Download the runner package:
+
+bash
+Copy
+Edit
+curl -O -L <runner_url>
+Extract the package:
+
+bash
+Copy
+Edit
+tar xzf ./actions-runner-linux-x64.tar.gz
+Run the configuration script:
+
+bash
+Copy
+Edit
+./config.sh
+Provide the GitHub repo URL and runner registration token.
+
+Start the runner as a background service.
+
+Key Takeaways
+Self-hosted runners allow for greater customization and are useful for on-premises or cloud-based automation.
+
+Runners can be configured at different levels (repo, organization, enterprise).
+
+Windows and Linux setups follow similar steps: download, configure, and register.
+
+Potential issues like script execution policies (Windows) and permissions (Linux) should be addressed for a smooth setup.
+
+
+
+Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v2.323.0/actions-runner-win-x64-2.323.0.zip -OutFile actions-runner-win-x64-2.323.0.zip
+
+Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD/actions-runner-win-x64-2.323.0.zip", "$PWD")

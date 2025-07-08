@@ -1,8 +1,4 @@
 """
-File: server.py
-Course: CSE251
-Author: Brother Comeau
-
 Instructions
 - In a terminal window, run "python server.py"
 

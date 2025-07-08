@@ -34,7 +34,7 @@ def test_top_level_url(server_url):
 def test_valid_people_entry():
     """Test retrieving a valid person entry (assuming 'people1' exists in data.txt)."""
     response = requests.get(f"{BASE_URL}/people/1")
-    assert response.status_code == 200
+    assert response.status_code == 200 
     data = response.json()
     assert isinstance(data, dict)
     assert "name" in data  # Assuming people objects have a "name" key

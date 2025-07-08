@@ -1,0 +1,118 @@
+[2025-07-03 20:51:00Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'Runner': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner'
+[2025-07-03 20:51:00Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-07-03 20:51:00Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22631.
+[2025-07-03 20:51:00Z INFO Listener] Version: 2.323.0
+[2025-07-03 20:51:00Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-07-03 20:51:00Z INFO Listener] Culture: en-US
+[2025-07-03 20:51:00Z INFO Listener] UI Culture: en-US
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO Listener] Validating directory permissions for: 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO CommandLineParser] Parse
+[2025-07-03 20:51:00Z INFO CommandLineParser] Parsing 5 args
+[2025-07-03 20:51:00Z INFO CommandLineParser] parsing argument
+[2025-07-03 20:51:00Z INFO CommandLineParser] HasArgs: False
+[2025-07-03 20:51:00Z INFO CommandLineParser] Adding Command: configure
+[2025-07-03 20:51:00Z INFO CommandLineParser] parsing argument
+[2025-07-03 20:51:00Z INFO CommandLineParser] HasArgs: True
+[2025-07-03 20:51:00Z INFO CommandLineParser] arg: url
+[2025-07-03 20:51:00Z INFO CommandLineParser] parsing argument
+[2025-07-03 20:51:00Z INFO CommandLineParser] HasArgs: True
+[2025-07-03 20:51:00Z INFO CommandLineParser] Adding option 'url': 'https://github.com/Emoral90/CI-CD_Project'
+[2025-07-03 20:51:00Z INFO CommandLineParser] parsing argument
+[2025-07-03 20:51:00Z INFO CommandLineParser] HasArgs: True
+[2025-07-03 20:51:00Z INFO CommandLineParser] arg: token
+[2025-07-03 20:51:00Z INFO CommandLineParser] parsing argument
+[2025-07-03 20:51:00Z INFO CommandLineParser] HasArgs: True
+[2025-07-03 20:51:00Z INFO CommandLineParser] Adding option 'token': '***'
+[2025-07-03 20:51:00Z INFO Listener] Arguments parsed
+[2025-07-03 20:51:00Z INFO Runner] ExecuteCommand
+[2025-07-03 20:51:00Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin\Runner.Listener.dll
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] binPath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] RootFolder: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'Runner': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] ConfigFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner_migrated'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner_migrated
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] CredFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials_migrated'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials_migrated
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:00Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:00Z INFO HostContext] Well known config file 'Service': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.service'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.service
+[2025-07-03 20:51:00Z INFO CommandSettings] Flag 'help': 'False'
+[2025-07-03 20:51:00Z INFO CommandSettings] Flag 'version': 'False'
+[2025-07-03 20:51:00Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-07-03 20:51:00Z INFO CommandSettings] Flag 'check': 'False'
+[2025-07-03 20:51:00Z INFO CommandSettings] Command 'configure': 'True'
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: 
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE: |                       
+[2025-07-03 20:51:00Z INFO Terminal] WRITE: Self-hosted runner registration
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE:                         |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-07-03 20:51:00Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-07-03 20:51:00Z INFO ConfigurationManager] ConfigureAsync
+[2025-07-03 20:51:00Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2025-07-03 20:51:00Z INFO ConfigurationStore] IsConfigured()
+[2025-07-03 20:51:00Z INFO ConfigurationStore] IsConfigured: False
+[2025-07-03 20:51:00Z INFO ConfigurationManager] Is configured: False
+[2025-07-03 20:51:00Z INFO CommandSettings] Arg 'url': 'https://github.com/Emoral90/CI-CD_Project'
+[2025-07-03 20:51:00Z INFO CommandSettings] Remove url from Arg dictionary.
+[2025-07-03 20:51:00Z INFO CommandSettings] Arg 'token': '***'
+[2025-07-03 20:51:00Z INFO CommandSettings] Remove token from Arg dictionary.
+[2025-07-03 20:51:01Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (FAE2:37E945:AEE376:B36853:6866ED39)
+[2025-07-03 20:51:01Z INFO ConfigurationManager] Using V2 flow: False
+[2025-07-03 20:51:01Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2025-07-03 20:51:01Z INFO RunnerServer] EstablishVssConnection
+[2025-07-03 20:51:01Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-07-03 20:51:02Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-07-03 20:51:02Z INFO RunnerServer] EstablishVssConnection
+[2025-07-03 20:51:02Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-07-03 20:51:02Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-07-03 20:51:02Z INFO RunnerServer] EstablishVssConnection
+[2025-07-03 20:51:02Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-07-03 20:51:02Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-07-03 20:51:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-07-03 20:51:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-07-03 20:51:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-07-03 20:51:03Z INFO Terminal] WRITE LINE: 
+[2025-07-03 20:51:03Z INFO ConfigurationManager] Test Connection complete.
+[2025-07-03 20:51:03Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-03 20:51:03Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-03 20:51:03Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials_rsaparams'
+[2025-07-03 20:51:03Z INFO RSAEncryptedFileKeyManager] Found existing RSA key parameters file C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials_rsaparams
+[2025-07-03 20:51:03Z ERR  Runner] System.Security.Cryptography.CryptographicException: Key not valid for use in specified state.
+   at System.Security.Cryptography.ProtectedData.ProtectOrUnprotect(Byte[] inputData, Byte[] optionalEntropy, DataProtectionScope scope, Boolean protect)
+   at System.Security.Cryptography.ProtectedData.Unprotect(Byte[] encryptedData, Byte[] optionalEntropy, DataProtectionScope scope)
+   at GitHub.Runner.Listener.Configuration.RSAEncryptedFileKeyManager.LoadParameters()
+   at GitHub.Runner.Listener.Configuration.RSAEncryptedFileKeyManager.CreateKey()
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.ConfigureAsync(CommandSettings command)
+   at GitHub.Runner.Listener.Runner.ExecuteCommand(CommandSettings command)
+[2025-07-03 20:51:03Z ERR  Terminal] WRITE ERROR: Key not valid for use in specified state.
+[2025-07-03 20:51:03Z INFO Listener] Runner execution has finished with return code 1

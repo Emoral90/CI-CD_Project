@@ -1,0 +1,174 @@
+[2025-07-09 00:17:54Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'Runner': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner'
+[2025-07-09 00:17:54Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-07-09 00:17:54Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22631.
+[2025-07-09 00:17:54Z INFO Listener] Version: 2.323.0
+[2025-07-09 00:17:54Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-07-09 00:17:54Z INFO Listener] Culture: en-US
+[2025-07-09 00:17:54Z INFO Listener] UI Culture: en-US
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO Listener] Validating directory permissions for: 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO CommandLineParser] Parse
+[2025-07-09 00:17:54Z INFO CommandLineParser] Parsing 2 args
+[2025-07-09 00:17:54Z INFO CommandLineParser] parsing argument
+[2025-07-09 00:17:54Z INFO CommandLineParser] HasArgs: False
+[2025-07-09 00:17:54Z INFO CommandLineParser] Adding Command: configure
+[2025-07-09 00:17:54Z INFO CommandLineParser] parsing argument
+[2025-07-09 00:17:54Z INFO CommandLineParser] HasArgs: True
+[2025-07-09 00:17:54Z INFO CommandLineParser] arg: check
+[2025-07-09 00:17:54Z INFO Listener] Arguments parsed
+[2025-07-09 00:17:54Z INFO Runner] ExecuteCommand
+[2025-07-09 00:17:54Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin\Runner.Listener.dll
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] binPath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] RootFolder: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'Runner': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] ConfigFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner_migrated'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.runner_migrated
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] CredFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials_migrated'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.credentials_migrated
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:17:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:17:54Z INFO HostContext] Well known config file 'Service': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.service'
+[2025-07-09 00:17:54Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\.service
+[2025-07-09 00:17:54Z INFO CommandSettings] Flag 'help': 'False'
+[2025-07-09 00:17:54Z INFO CommandSettings] Flag 'version': 'False'
+[2025-07-09 00:17:54Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-07-09 00:17:54Z INFO CommandSettings] Flag 'check': 'True'
+[2025-07-09 00:17:54Z INFO CommandSettings] Arg 'url': ''
+[2025-07-09 00:17:54Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-07-09 00:17:54Z INFO PromptManager] ReadValue
+[2025-07-09 00:17:54Z INFO Terminal] WRITE: What is the URL of your repository? 
+[2025-07-09 00:17:54Z INFO Terminal] READ LINE
+[2025-07-09 00:18:03Z INFO Terminal] Read value: 'https://github.com/Emoral90/CI-CD_Project'
+[2025-07-09 00:18:03Z INFO CommandSettings] Arg 'pat': ''
+[2025-07-09 00:18:03Z INFO CommandSettings] Flag 'unattended': 'False'
+[2025-07-09 00:18:03Z INFO PromptManager] ReadValue
+[2025-07-09 00:18:03Z INFO Terminal] WRITE: What is your GitHub personal access token? 
+[2025-07-09 00:18:03Z INFO Terminal] READ SECRET
+[2025-07-09 00:25:11Z INFO Terminal] Read value: '***'
+[2025-07-09 00:25:11Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Listener.Check.ICheckExtension'
+[2025-07-09 00:25:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Listener.Check.InternetCheck, Runner.Listener
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag'
+[2025-07-09 00:25:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Listener.Check.ActionsCheck, Runner.Listener
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag'
+[2025-07-09 00:25:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Listener.Check.GitCheck, Runner.Listener
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag'
+[2025-07-09 00:25:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Listener.Check.NodeJsCheck, Runner.Listener
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:11Z INFO HostContext] Well known directory 'Diag': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag'
+[2025-07-09 00:25:11Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:11Z INFO Terminal] WRITE LINE: **  Check:               Internet Connection
+[2025-07-09 00:25:11Z INFO Terminal] WRITE LINE: **  Description:         Check if the Actions runner has internet access.
+[2025-07-09 00:25:11Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **                                            F A I L                                                               **
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: ** Log: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag\InternetCheck_20250709-002511-utc.log
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: ** Help Doc: https://github.com/actions/runner/blob/main/docs/checks/internet.md
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **  Check:               GitHub Actions Connection
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **  Description:         Check if the Actions runner has access to the GitHub Actions service.
+[2025-07-09 00:25:16Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **                                            F A I L                                                               **
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: ** Log: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag\ActionsCheck_20250709-002511-utc.log
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: ** Help Doc: https://github.com/actions/runner/blob/main/docs/checks/actions.md
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **  Check:               Git Certificate/Proxy Validation
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **  Description:         Check if the Git CLI can access GitHub.com or GitHub Enterprise Server.
+[2025-07-09 00:25:21Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper] Starting process:
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   File name: 'C:\Program Files\Git\cmd\git.EXE'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Arguments: ' ls-remote --exit-code https://gh:***@github.com/actions/checkout HEAD'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-07-09 00:25:21Z INFO ProcessInvokerWrapper] Process started with process id 23416, waiting for process exit.
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper] Finished process 23416 with exit code 0, and elapsed time 00:00:01.1835590.
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **                                            P A S S                                                               **
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: ** Log: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag\GitCheck_20250709-002511-utc.log
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **  Check:               Node.js Certificate/Proxy Validation
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **  Description:         Check if Node.js has access to GitHub.com or GitHub Enterprise Server.
+[2025-07-09 00:25:22Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:22Z INFO HostContext] Well known directory 'Externals': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\externals'
+[2025-07-09 00:25:22Z INFO HostContext] Well known directory 'Bin': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin'
+[2025-07-09 00:25:22Z INFO HostContext] Well known directory 'Root': 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\externals\node20\bin\node.exe'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\bin\checkScripts\makeWebRequest.js"'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-07-09 00:25:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-07-09 00:25:35Z INFO ProcessInvokerWrapper] Process started with process id 7512, waiting for process exit.
+[2025-07-09 00:25:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-07-09 00:25:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-07-09 00:25:36Z INFO ProcessInvokerWrapper] Finished process 7512 with exit code 0, and elapsed time 00:00:13.3332353.
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: **                                            P A S S                                                               **
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: **                                                                                                                  **
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: ** Log: C:\Users\moral\OneDrive\Desktop\School\cse499\CI-CD_Project\actions-runner\_diag\NodeJsCheck_20250709-002511-utc.log
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: **********************************************************************************************************************
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:36Z INFO Terminal] WRITE LINE: 
+[2025-07-09 00:25:36Z INFO Listener] Runner execution has finished with return code 0

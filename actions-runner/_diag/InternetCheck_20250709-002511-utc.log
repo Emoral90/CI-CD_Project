@@ -1,0 +1,502 @@
+2025-07-09T00:25:11.4394256Z ***************************************************************************************************************
+2025-07-09T00:25:11.4394465Z ****                                                                                                       ****
+2025-07-09T00:25:11.4394503Z ****     !!! WARNING !!! 
+2025-07-09T00:25:11.4394527Z ****     DO NOT share the log in public place! The log may contains secrets in plain text. 
+2025-07-09T00:25:11.4394534Z ****     !!! WARNING !!! 
+2025-07-09T00:25:11.4394565Z ****                                                                                                       ****
+2025-07-09T00:25:11.4394572Z ***************************************************************************************************************
+2025-07-09T00:25:11.4652368Z ***************************************************************************************************************
+2025-07-09T00:25:11.4652501Z ****                                                                                                       ****
+2025-07-09T00:25:11.4652516Z ****     Try DNS lookup for api.github.com 
+2025-07-09T00:25:11.4668982Z ****                                                                                                       ****
+2025-07-09T00:25:11.4669027Z ***************************************************************************************************************
+2025-07-09T00:25:11.5118485Z Resolved DNS for api.github.com to '140.82.116.5'
+2025-07-09T00:25:11.5201809Z ***************************************************************************************************************
+2025-07-09T00:25:11.5201923Z ****                                                                                                       ****
+2025-07-09T00:25:11.5201939Z ****     Send HTTPS Request (GET) to https://api.github.com 
+2025-07-09T00:25:11.5201957Z ****                                                                                                       ****
+2025-07-09T00:25:11.5201964Z ***************************************************************************************************************
+2025-07-09T00:25:11.5460822Z [START System.Net.Http - RequestStart]
+2025-07-09T00:25:11.5476201Z https
+2025-07-09T00:25:11.5476663Z api.github.com
+2025-07-09T00:25:11.5476891Z 443
+2025-07-09T00:25:11.5476926Z /
+2025-07-09T00:25:11.5477049Z 1
+2025-07-09T00:25:11.5477058Z 1
+2025-07-09T00:25:11.5477089Z 0
+2025-07-09T00:25:11.5477216Z [END System.Net.Http - RequestStart]
+2025-07-09T00:25:11.5747194Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5747741Z 58186975
+2025-07-09T00:25:11.5747773Z 0
+2025-07-09T00:25:11.5747891Z 0
+2025-07-09T00:25:11.5747902Z .ctor
+2025-07-09T00:25:11.5747911Z HttpConnectionPool https://api.github.com:443
+2025-07-09T00:25:11.5748015Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5779971Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5780161Z 58186975
+2025-07-09T00:25:11.5780193Z 0
+2025-07-09T00:25:11.5780203Z 0
+2025-07-09T00:25:11.5780215Z CheckForHttp11ConnectionInjection
+2025-07-09T00:25:11.5780227Z Available HTTP/1.1 connections: 0, Requests in the queue: 1, Requests without a connection attempt: 1, Pending HTTP/1.1 connections: 0, Total associated HTTP/1.1 connections: 0, Max HTTP/1.1 connection limit: 2147483647, Will inject connection: True.
+2025-07-09T00:25:11.5780241Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5784450Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5784579Z 58186975
+2025-07-09T00:25:11.5784606Z 0
+2025-07-09T00:25:11.5784714Z 0
+2025-07-09T00:25:11.5784725Z AddHttp11ConnectionAsync
+2025-07-09T00:25:11.5784755Z Creating new HTTP/1.1 connection for pool.
+2025-07-09T00:25:11.5784763Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5793602Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5793767Z 58186975
+2025-07-09T00:25:11.5793794Z 0
+2025-07-09T00:25:11.5793813Z 0
+2025-07-09T00:25:11.5793823Z TryGetPooledHttp11Connection
+2025-07-09T00:25:11.5793832Z No available HTTP/1.1 connections; request queued.
+2025-07-09T00:25:11.5793852Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.6873093Z [START System.Net.Security - HandshakeStart]
+2025-07-09T00:25:11.6873661Z False
+2025-07-09T00:25:11.6873766Z api.github.com
+2025-07-09T00:25:11.6873816Z [END System.Net.Security - HandshakeStart]
+2025-07-09T00:25:11.7281615Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7282147Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.7282245Z (null)
+2025-07-09T00:25:11.7282262Z api.github.com
+2025-07-09T00:25:11.7282282Z 524572
+2025-07-09T00:25:11.7282298Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7312461Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7312751Z InitializeSecurityContext
+2025-07-09T00:25:11.7312831Z 2
+2025-07-09T00:25:11.7312854Z 271
+2025-07-09T00:25:11.7312867Z 590610
+2025-07-09T00:25:11.7312879Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7475243Z [START Private.InternalDiagnostics.System.Net.Security - SentFrame]
+2025-07-09T00:25:11.7475503Z SslStream#42549079
+2025-07-09T00:25:11.7475543Z Tls:ClientHello[271] TargetName='api.github.com' SupportedVersion='Tls, Tls11, Tls12, Tls13' ApplicationProtocols='None'
+2025-07-09T00:25:11.7475739Z 1
+2025-07-09T00:25:11.7475755Z [END Private.InternalDiagnostics.System.Net.Security - SentFrame]
+2025-07-09T00:25:11.7866699Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7867375Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.7867578Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.7867626Z api.github.com
+2025-07-09T00:25:11.7867690Z 524572
+2025-07-09T00:25:11.7867900Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7894791Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7895337Z InitializeSecurityContext
+2025-07-09T00:25:11.7895455Z 2
+2025-07-09T00:25:11.7895486Z 0
+2025-07-09T00:25:11.7895569Z 590610
+2025-07-09T00:25:11.7896031Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7898226Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7898322Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.7898365Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.7898391Z api.github.com
+2025-07-09T00:25:11.7898416Z 524572
+2025-07-09T00:25:11.7898455Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7902165Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7902471Z InitializeSecurityContext
+2025-07-09T00:25:11.7902570Z 2
+2025-07-09T00:25:11.7902617Z 0
+2025-07-09T00:25:11.7902661Z 590610
+2025-07-09T00:25:11.7902694Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7903582Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7903679Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.7903727Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.7903755Z api.github.com
+2025-07-09T00:25:11.7903786Z 524572
+2025-07-09T00:25:11.7903801Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7916779Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7917465Z InitializeSecurityContext
+2025-07-09T00:25:11.7917617Z 2
+2025-07-09T00:25:11.7917682Z 0
+2025-07-09T00:25:11.7917751Z 590610
+2025-07-09T00:25:11.7917793Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7918669Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7918878Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.7918954Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.7918998Z api.github.com
+2025-07-09T00:25:11.7919045Z 524572
+2025-07-09T00:25:11.7919078Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7938335Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7938732Z InitializeSecurityContext
+2025-07-09T00:25:11.7938834Z 2
+2025-07-09T00:25:11.7938876Z 0
+2025-07-09T00:25:11.7938916Z 590610
+2025-07-09T00:25:11.7938951Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.7939805Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.7939927Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.7939960Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.7940254Z api.github.com
+2025-07-09T00:25:11.7940287Z 524572
+2025-07-09T00:25:11.7940305Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.8030649Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.8031332Z InitializeSecurityContext
+2025-07-09T00:25:11.8031460Z 2
+2025-07-09T00:25:11.8031506Z 64
+2025-07-09T00:25:11.8031526Z 0
+2025-07-09T00:25:11.8031546Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.8063208Z [START Private.InternalDiagnostics.System.Net.Security - SentFrame]
+2025-07-09T00:25:11.8063659Z SslStream#42549079
+2025-07-09T00:25:11.8063727Z Tls12:ChangeCipherSpec[6]
+2025-07-09T00:25:11.8063773Z 0
+2025-07-09T00:25:11.8063797Z [END Private.InternalDiagnostics.System.Net.Security - SentFrame]
+2025-07-09T00:25:11.8826469Z [START Private.InternalDiagnostics.System.Net.Security - RemoteCertificate]
+2025-07-09T00:25:11.8827980Z [Version]
+2025-07-09T00:25:11.8828026Z   V3
+2025-07-09T00:25:11.8828061Z 
+2025-07-09T00:25:11.8828130Z [Subject]
+2025-07-09T00:25:11.8828142Z   CN=*.github.com
+2025-07-09T00:25:11.8828162Z   Simple Name: *.github.com
+2025-07-09T00:25:11.8828189Z   DNS Name: *.github.com
+2025-07-09T00:25:11.8828227Z 
+2025-07-09T00:25:11.8828250Z [Issuer]
+2025-07-09T00:25:11.8828262Z   CN=Sectigo ECC Domain Validation Secure Server CA, O=Sectigo Limited, L=Salford, S=Greater Manchester, C=GB
+2025-07-09T00:25:11.8828307Z   Simple Name: Sectigo ECC Domain Validation Secure Server CA
+2025-07-09T00:25:11.8828333Z   DNS Name: Sectigo ECC Domain Validation Secure Server CA
+2025-07-09T00:25:11.8828355Z 
+2025-07-09T00:25:11.8828375Z [Serial Number]
+2025-07-09T00:25:11.8828386Z   2A16F5C2011807F70A9263DD3C39A9F2
+2025-07-09T00:25:11.8828407Z 
+2025-07-09T00:25:11.8828427Z [Not Before]
+2025-07-09T00:25:11.8828438Z   2/4/2025 4:00:00 PM
+2025-07-09T00:25:11.8828614Z 
+2025-07-09T00:25:11.8828642Z [Not After]
+2025-07-09T00:25:11.8828685Z   2/5/2026 3:59:59 PM
+2025-07-09T00:25:11.8828714Z 
+2025-07-09T00:25:11.8828734Z [Thumbprint]
+2025-07-09T00:25:11.8828745Z   7A9666B4C7AAA77EA1CD48AF0B3D0FBF60604FB2
+2025-07-09T00:25:11.8828767Z 
+2025-07-09T00:25:11.8828786Z [Signature Algorithm]
+2025-07-09T00:25:11.8828798Z   sha256ECDSA(1.2.840.10045.4.3.2)
+2025-07-09T00:25:11.8828820Z 
+2025-07-09T00:25:11.8828950Z [Public Key]
+2025-07-09T00:25:11.8828962Z   Algorithm: ECC
+2025-07-09T00:25:11.8828989Z   Length: 
+2025-07-09T00:25:11.8829014Z   Key Blob: 04 95 b4 3e 0c 4a c1 53 df c1 62 56 17 57 9a b1 69 2e 4d bb 95 1c 77 eb 1c c0 80 a3 62 9e d9 d9 87 09 d8 98 2e ec 70 63 33 54 7a f9 bd 9d f3 26 58 26 5a 4b 07 66 97 de a1 b0 73 56 6c 70 4e f0 1c
+2025-07-09T00:25:11.8829045Z   Parameters: 06 08 2a 86 48 ce 3d 03 01 07
+2025-07-09T00:25:11.8829071Z 
+2025-07-09T00:25:11.8829091Z [Extensions]
+2025-07-09T00:25:11.8829102Z * Authority Key Identifier(2.5.29.35):
+2025-07-09T00:25:11.8829123Z   KeyID=f6850a3b1186e1047d0eaa0b2cd2eecc647b7bae
+2025-07-09T00:25:11.8829163Z 
+2025-07-09T00:25:11.8829184Z * Subject Key Identifier(2.5.29.14):
+2025-07-09T00:25:11.8829195Z   98f33722da9761d1151ef854cea247b1b1276f00
+2025-07-09T00:25:11.8829218Z 
+2025-07-09T00:25:11.8829237Z * Key Usage(2.5.29.15):
+2025-07-09T00:25:11.8829249Z   Digital Signature (80)
+2025-07-09T00:25:11.8829270Z 
+2025-07-09T00:25:11.8829290Z * Basic Constraints(2.5.29.19):
+2025-07-09T00:25:11.8829301Z   Subject Type=End Entity
+2025-07-09T00:25:11.8829323Z Path Length Constraint=None
+2025-07-09T00:25:11.8829344Z 
+2025-07-09T00:25:11.8829364Z * Enhanced Key Usage(2.5.29.37):
+2025-07-09T00:25:11.8829376Z   Server Authentication (1.3.6.1.5.5.7.3.1)
+2025-07-09T00:25:11.8829398Z Client Authentication (1.3.6.1.5.5.7.3.2)
+2025-07-09T00:25:11.8829419Z 
+2025-07-09T00:25:11.8829439Z * Certificate Policies(2.5.29.32):
+2025-07-09T00:25:11.8829450Z   [1]Certificate Policy:
+2025-07-09T00:25:11.8829471Z      Policy Identifier=1.3.6.1.4.1.6449.1.2.2.7
+2025-07-09T00:25:11.8829859Z      [1,1]Policy Qualifier Info:
+2025-07-09T00:25:11.8829881Z           Policy Qualifier Id=CPS
+2025-07-09T00:25:11.8829902Z           Qualifier:
+2025-07-09T00:25:11.8829923Z                https://sectigo.com/CPS
+2025-07-09T00:25:11.8829945Z [2]Certificate Policy:
+2025-07-09T00:25:11.8829966Z      Policy Identifier=2.23.140.1.2.1
+2025-07-09T00:25:11.8829987Z 
+2025-07-09T00:25:11.8830007Z * Authority Information Access(1.3.6.1.5.5.7.1.1):
+2025-07-09T00:25:11.8830020Z   [1]Authority Info Access
+2025-07-09T00:25:11.8830042Z      Access Method=Certification Authority Issuer (1.3.6.1.5.5.7.48.2)
+2025-07-09T00:25:11.8830080Z      Alternative Name:
+2025-07-09T00:25:11.8830101Z           URL=http://crt.sectigo.com/SectigoECCDomainValidationSecureServerCA.crt
+2025-07-09T00:25:11.8830125Z [2]Authority Info Access
+2025-07-09T00:25:11.8830146Z      Access Method=On-line Certificate Status Protocol (1.3.6.1.5.5.7.48.1)
+2025-07-09T00:25:11.8830168Z      Alternative Name:
+2025-07-09T00:25:11.8830189Z           URL=http://ocsp.sectigo.com
+2025-07-09T00:25:11.8830464Z 
+2025-07-09T00:25:11.8830655Z * SCT List(1.3.6.1.4.1.11129.2.4.2):
+2025-07-09T00:25:11.8830667Z   v1
+2025-07-09T00:25:11.8830693Z 969764bf555897adf743876837084277e9f03ad5f6a4f3366e46a43f0fcaa9c6
+2025-07-09T00:25:11.8830722Z ‎Tuesday, ‎February ‎4, ‎2025 5:05:54 PM
+2025-07-09T00:25:11.8830742Z SHA256
+2025-07-09T00:25:11.8830767Z ECDSA
+2025-07-09T00:25:11.8830793Z 304402200118c2091263792b23d5a0dfd64d9ef64ec13103b3064e4d1f6c8d6671315c9602204c775c11456789268cb9de3891b40bf5bf2bed56f8bc79bd8f94335a05015ed2
+2025-07-09T00:25:11.8830825Z 
+2025-07-09T00:25:11.8830850Z v1
+2025-07-09T00:25:11.8830861Z 1986d4c728aa6ffeba036f782a4d0191aace2d72310faece5d70412d254cc7d4
+2025-07-09T00:25:11.8830873Z ‎Tuesday, ‎February ‎4, ‎2025 5:05:54 PM
+2025-07-09T00:25:11.8830899Z SHA256
+2025-07-09T00:25:11.8830918Z ECDSA
+2025-07-09T00:25:11.8830943Z 304502203d522e19e1613c320d756668ec706b5ccf019116047248481d6373bf1e69f7ae022100948d9b40b49475fbc9fdc85be74c21cb6b0295a6dab2f63fa59e8b5c0406ea2f
+2025-07-09T00:25:11.8830969Z 
+2025-07-09T00:25:11.8830994Z v1
+2025-07-09T00:25:11.8831005Z cb38f715897c84a1445f5bc1ddfbc96ef29a59cd470a690585b0cb14c31458e7
+2025-07-09T00:25:11.8831017Z ‎Tuesday, ‎February ‎4, ‎2025 5:05:54 PM
+2025-07-09T00:25:11.8831043Z SHA256
+2025-07-09T00:25:11.8831068Z ECDSA
+2025-07-09T00:25:11.8831088Z 304502204d7e39a1d2055103b6aab1f52cc88be0f6bbe4c498eb574ff0e2c8ec4db56a9e022100cf1f7658cc92cd8787e22de6b60b312e2eb6c4734c3114f3304e1d2dcaf5b483
+2025-07-09T00:25:11.8831119Z 
+2025-07-09T00:25:11.8831139Z * Subject Alternative Name(2.5.29.17):
+2025-07-09T00:25:11.8831149Z   DNS Name=*.github.com
+2025-07-09T00:25:11.8831170Z DNS Name=github.com
+2025-07-09T00:25:11.8831196Z 
+2025-07-09T00:25:11.8831216Z 
+2025-07-09T00:25:11.8831554Z [END Private.InternalDiagnostics.System.Net.Security - RemoteCertificate]
+2025-07-09T00:25:11.9010354Z [START Private.InternalDiagnostics.System.Net.Security - RemoteCertHasNoErrors]
+2025-07-09T00:25:11.9010936Z 42549079
+2025-07-09T00:25:11.9011021Z [END Private.InternalDiagnostics.System.Net.Security - RemoteCertHasNoErrors]
+2025-07-09T00:25:11.9091649Z [START System.Net.Security - HandshakeStop]
+2025-07-09T00:25:11.9092169Z 12288
+2025-07-09T00:25:11.9092235Z [END System.Net.Security - HandshakeStop]
+2025-07-09T00:25:11.9168362Z [START System.Net.Http - ConnectionEstablished]
+2025-07-09T00:25:11.9168874Z 1
+2025-07-09T00:25:11.9168949Z 1
+2025-07-09T00:25:11.9171387Z 0
+2025-07-09T00:25:11.9171435Z https
+2025-07-09T00:25:11.9171457Z api.github.com
+2025-07-09T00:25:11.9171510Z 443
+2025-07-09T00:25:11.9171533Z ::ffff:140.82.116.5
+2025-07-09T00:25:11.9171567Z [END System.Net.Http - ConnectionEstablished]
+2025-07-09T00:25:11.9397233Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9397607Z 58186975
+2025-07-09T00:25:11.9397679Z 12302711
+2025-07-09T00:25:11.9397712Z 0
+2025-07-09T00:25:11.9397738Z TraceConnection
+2025-07-09T00:25:11.9397881Z HttpConnection(HttpConnectionPool https://api.github.com:443). Id:0, SslProtocol:Tls13, NegotiatedApplicationProtocol:, NegotiatedCipherSuite:TLS_AES_128_GCM_SHA256, CipherAlgorithm:Aes128, CipherStrength:128, HashAlgorithm:Sha256, HashStrength:0, KeyExchangeAlgorithm:None, KeyExchangeStrength:0, LocalCertificate:, RemoteCertificate:[Subject]
+2025-07-09T00:25:11.9397902Z   CN=*.github.com
+2025-07-09T00:25:11.9397963Z 
+2025-07-09T00:25:11.9398000Z [Issuer]
+2025-07-09T00:25:11.9398013Z   CN=Sectigo ECC Domain Validation Secure Server CA, O=Sectigo Limited, L=Salford, S=Greater Manchester, C=GB
+2025-07-09T00:25:11.9398055Z 
+2025-07-09T00:25:11.9398077Z [Serial Number]
+2025-07-09T00:25:11.9398089Z   2A16F5C2011807F70A9263DD3C39A9F2
+2025-07-09T00:25:11.9398111Z 
+2025-07-09T00:25:11.9398132Z [Not Before]
+2025-07-09T00:25:11.9398461Z   2/4/2025 4:00:00 PM
+2025-07-09T00:25:11.9398488Z 
+2025-07-09T00:25:11.9398507Z [Not After]
+2025-07-09T00:25:11.9398520Z   2/5/2026 3:59:59 PM
+2025-07-09T00:25:11.9398545Z 
+2025-07-09T00:25:11.9398593Z [Thumbprint]
+2025-07-09T00:25:11.9398619Z   7A9666B4C7AAA77EA1CD48AF0B3D0FBF60604FB2
+2025-07-09T00:25:11.9398638Z 
+2025-07-09T00:25:11.9398705Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9403380Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9403550Z 58186975
+2025-07-09T00:25:11.9403588Z 12302711
+2025-07-09T00:25:11.9403617Z 0
+2025-07-09T00:25:11.9403643Z ReturnHttp11Connection
+2025-07-09T00:25:11.9403668Z isNewConnection=True
+2025-07-09T00:25:11.9403690Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9406878Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9407407Z 58186975
+2025-07-09T00:25:11.9407482Z 12302711
+2025-07-09T00:25:11.9407813Z 0
+2025-07-09T00:25:11.9407850Z ReturnHttp11Connection
+2025-07-09T00:25:11.9407881Z Dequeued waiting HTTP/1.1 request.
+2025-07-09T00:25:11.9407911Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9453764Z [START System.Net.Http - RequestLeftQueue]
+2025-07-09T00:25:11.9519687Z 364.5838
+2025-07-09T00:25:11.9519856Z 1
+2025-07-09T00:25:11.9519877Z 1
+2025-07-09T00:25:11.9519944Z [END System.Net.Http - RequestLeftQueue]
+2025-07-09T00:25:11.9579135Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9579586Z 58186975
+2025-07-09T00:25:11.9579801Z 12302711
+2025-07-09T00:25:11.9579821Z 51182882
+2025-07-09T00:25:11.9579839Z SendAsync
+2025-07-09T00:25:11.9579932Z Sending request: Method: GET, RequestUri: 'https://api.github.com/', Version: 1.1, Content: <null>, Headers:
+2025-07-09T00:25:11.9579942Z {
+2025-07-09T00:25:11.9579977Z   User-Agent: GitHubActionsRunner-win-x64/2.323.0
+2025-07-09T00:25:11.9579986Z   User-Agent: CommitSHA/d8b82f44a9ec0258904d5869ae683c31d5aac299
+2025-07-09T00:25:11.9580015Z   User-Agent: Pid/23908
+2025-07-09T00:25:11.9580031Z   User-Agent: CreationTime/2025-07-09T00%3A17%3A54.5898813Z
+2025-07-09T00:25:11.9580050Z   User-Agent: (Runner)
+2025-07-09T00:25:11.9580089Z }
+2025-07-09T00:25:11.9580139Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9581920Z [START System.Net.Http - RequestHeadersStart]
+2025-07-09T00:25:11.9582054Z 0
+2025-07-09T00:25:11.9582211Z [END System.Net.Http - RequestHeadersStart]
+2025-07-09T00:25:11.9595164Z [START System.Net.Http - RequestHeadersStop]
+2025-07-09T00:25:11.9595519Z [END System.Net.Http - RequestHeadersStop]
+2025-07-09T00:25:11.9596688Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9596866Z 58186975
+2025-07-09T00:25:11.9596908Z 12302711
+2025-07-09T00:25:11.9596922Z 51182882
+2025-07-09T00:25:11.9596937Z WriteToStreamAsync
+2025-07-09T00:25:11.9596948Z Writing 205 bytes.
+2025-07-09T00:25:11.9596958Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.9672277Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.9672632Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.9672681Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.9672718Z api.github.com
+2025-07-09T00:25:11.9672748Z 524572
+2025-07-09T00:25:11.9672771Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.9690078Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.9690418Z InitializeSecurityContext
+2025-07-09T00:25:11.9690688Z 2
+2025-07-09T00:25:11.9690712Z 0
+2025-07-09T00:25:11.9690722Z 0
+2025-07-09T00:25:11.9690735Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.9692962Z [START Private.InternalDiagnostics.System.Net.Security - ErrorMessage]
+2025-07-09T00:25:11.9693085Z SslStream#42549079
+2025-07-09T00:25:11.9693115Z CompleteHandshake
+2025-07-09T00:25:11.9693128Z Ignoring unsolicited renegotiated certificate.
+2025-07-09T00:25:11.9693140Z [END Private.InternalDiagnostics.System.Net.Security - ErrorMessage]
+2025-07-09T00:25:11.9694781Z [START Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.9694838Z SafeFreeCredential_SECURITY#66790640
+2025-07-09T00:25:11.9694857Z SafeDeleteSslContext#54061692
+2025-07-09T00:25:11.9694870Z api.github.com
+2025-07-09T00:25:11.9694890Z 524572
+2025-07-09T00:25:11.9694898Z [END Private.InternalDiagnostics.System.Net.Security - InitializeSecurityContext]
+2025-07-09T00:25:11.9704970Z [START Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.9705255Z InitializeSecurityContext
+2025-07-09T00:25:11.9705462Z 2
+2025-07-09T00:25:11.9705476Z 0
+2025-07-09T00:25:11.9705487Z 0
+2025-07-09T00:25:11.9705500Z [END Private.InternalDiagnostics.System.Net.Security - SecurityContextInputBuffers]
+2025-07-09T00:25:11.9706024Z [START Private.InternalDiagnostics.System.Net.Security - ErrorMessage]
+2025-07-09T00:25:11.9706067Z SslStream#42549079
+2025-07-09T00:25:11.9706083Z CompleteHandshake
+2025-07-09T00:25:11.9706093Z Ignoring unsolicited renegotiated certificate.
+2025-07-09T00:25:11.9706100Z [END Private.InternalDiagnostics.System.Net.Security - ErrorMessage]
+2025-07-09T00:25:12.0043913Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0044448Z 58186975
+2025-07-09T00:25:12.0044510Z 12302711
+2025-07-09T00:25:12.0044532Z 51182882
+2025-07-09T00:25:12.0044559Z InitialFillAsync
+2025-07-09T00:25:12.0044578Z Received 3503 bytes.
+2025-07-09T00:25:12.0044599Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0076772Z [START System.Net.Http - ResponseHeadersStart]
+2025-07-09T00:25:12.0077046Z [END System.Net.Http - ResponseHeadersStart]
+2025-07-09T00:25:12.0147279Z [START System.Net.Http - ResponseHeadersStop]
+2025-07-09T00:25:12.0147740Z 200
+2025-07-09T00:25:12.0147805Z [END System.Net.Http - ResponseHeadersStop]
+2025-07-09T00:25:12.0148147Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0148252Z 58186975
+2025-07-09T00:25:12.0148289Z 12302711
+2025-07-09T00:25:12.0148533Z 51182882
+2025-07-09T00:25:12.0148563Z SendAsync
+2025-07-09T00:25:12.0148587Z Request is fully sent.
+2025-07-09T00:25:12.0148606Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0168837Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0168978Z 58186975
+2025-07-09T00:25:12.0169014Z 12302711
+2025-07-09T00:25:12.0169037Z 51182882
+2025-07-09T00:25:12.0169059Z SendAsync
+2025-07-09T00:25:12.0169225Z Received response: StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.HttpConnectionResponseContent, Headers:
+2025-07-09T00:25:12.0169565Z {
+2025-07-09T00:25:12.0169625Z   Date: Wed, 09 Jul 2025 00:25:11 GMT
+2025-07-09T00:25:12.0169657Z   Cache-Control: public, max-age=60, s-maxage=60
+2025-07-09T00:25:12.0169685Z   Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+2025-07-09T00:25:12.0169709Z   x-github-api-version-selected: 2022-11-28
+2025-07-09T00:25:12.0169730Z   Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+2025-07-09T00:25:12.0169788Z   Access-Control-Allow-Origin: *
+2025-07-09T00:25:12.0169810Z   Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+2025-07-09T00:25:12.0169833Z   X-Frame-Options: deny
+2025-07-09T00:25:12.0169888Z   X-Content-Type-Options: nosniff
+2025-07-09T00:25:12.0169915Z   X-XSS-Protection: 0
+2025-07-09T00:25:12.0169942Z   Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+2025-07-09T00:25:12.0169970Z   Content-Security-Policy: default-src 'none'
+2025-07-09T00:25:12.0169997Z   Server: github.com
+2025-07-09T00:25:12.0170018Z   X-GitHub-Media-Type: github.v3; format=json
+2025-07-09T00:25:12.0170040Z   ETag: W/"cb8c56af7fcef970136a8acacba4e16ea32ab6762dbaaddf6909fae9db2c9f5e"
+2025-07-09T00:25:12.0170068Z   Accept-Ranges: bytes
+2025-07-09T00:25:12.0170090Z   X-RateLimit-Limit: 60
+2025-07-09T00:25:12.0170116Z   X-RateLimit-Remaining: 59
+2025-07-09T00:25:12.0170143Z   X-RateLimit-Reset: 1752024312
+2025-07-09T00:25:12.0170170Z   X-RateLimit-Resource: core
+2025-07-09T00:25:12.0170191Z   X-RateLimit-Used: 1
+2025-07-09T00:25:12.0170219Z   X-GitHub-Request-Id: 39E1:13B8C7:F90733:FF63B4:686DB6E8
+2025-07-09T00:25:12.0170242Z   Content-Type: application/json; charset=utf-8
+2025-07-09T00:25:12.0170429Z   Content-Length: 2262
+2025-07-09T00:25:12.0170624Z }
+2025-07-09T00:25:12.0170696Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0213785Z [START System.Net.Http - ResponseContentStart]
+2025-07-09T00:25:12.0214242Z [END System.Net.Http - ResponseContentStart]
+2025-07-09T00:25:12.0241459Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0241874Z 58186975
+2025-07-09T00:25:12.0241943Z 12302711
+2025-07-09T00:25:12.0241963Z 51182882
+2025-07-09T00:25:12.0242063Z CopyFromBufferAsync
+2025-07-09T00:25:12.0242085Z Copying 2262 bytes to stream.
+2025-07-09T00:25:12.0242108Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0244380Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0244557Z 58186975
+2025-07-09T00:25:12.0244593Z 12302711
+2025-07-09T00:25:12.0244822Z 0
+2025-07-09T00:25:12.0244858Z ReturnHttp11Connection
+2025-07-09T00:25:12.0244890Z isNewConnection=False
+2025-07-09T00:25:12.0244907Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0245656Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0245721Z 58186975
+2025-07-09T00:25:12.0245743Z 12302711
+2025-07-09T00:25:12.0245760Z 0
+2025-07-09T00:25:12.0245776Z ReturnHttp11Connection
+2025-07-09T00:25:12.0245792Z Put HTTP/1.1 connection in pool.
+2025-07-09T00:25:12.0245804Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0255662Z [START System.Net.Http - ResponseContentStop]
+2025-07-09T00:25:12.0255906Z [END System.Net.Http - ResponseContentStop]
+2025-07-09T00:25:12.0256083Z [START System.Net.Http - RequestStop]
+2025-07-09T00:25:12.0256239Z 200
+2025-07-09T00:25:12.0256282Z [END System.Net.Http - RequestStop]
+2025-07-09T00:25:12.0272097Z Http status code: OK
+2025-07-09T00:25:12.0303278Z Http response headers: Date: Wed, 09 Jul 2025 00:25:11 GMT
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+x-github-api-version-selected: 2022-11-28
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+Server: github.com
+X-GitHub-Media-Type: github.v3; format=json
+ETag: W/"cb8c56af7fcef970136a8acacba4e16ea32ab6762dbaaddf6909fae9db2c9f5e"
+Accept-Ranges: bytes
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 59
+X-RateLimit-Reset: 1752024312
+X-RateLimit-Resource: core
+X-RateLimit-Used: 1
+X-GitHub-Request-Id: 39E1:13B8C7:F90733:FF63B4:686DB6E8
+
+2025-07-09T00:25:12.0336793Z Http response body: {"current_user_url":"https://api.github.com/user","current_user_authorizations_html_url":"https://github.com/settings/connections/applications{/client_id}","authorizations_url":"https://api.github.com/authorizations","code_search_url":"https://api.github.com/search/code?q={query}{&page,per_page,sort,order}","commit_search_url":"https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}","emails_url":"https://api.github.com/user/emails","emojis_url":"https://api.github.com/emojis","events_url":"https://api.github.com/events","feeds_url":"https://api.github.com/feeds","followers_url":"https://api.github.com/user/followers","following_url":"https://api.github.com/user/following{/target}","gists_url":"https://api.github.com/gists{/gist_id}","hub_url":"https://api.github.com/hub","issue_search_url":"https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}","issues_url":"https://api.github.com/issues","keys_url":"https://api.github.com/user/keys","label_search_url":"https://api.github.com/search/labels?q={query}&repository_id={repository_id}{&page,per_page}","notifications_url":"https://api.github.com/notifications","organization_url":"https://api.github.com/orgs/{org}","organization_repositories_url":"https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}","organization_teams_url":"https://api.github.com/orgs/{org}/teams","public_gists_url":"https://api.github.com/gists/public","rate_limit_url":"https://api.github.com/rate_limit","repository_url":"https://api.github.com/repos/{owner}/{repo}","repository_search_url":"https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}","current_user_repositories_url":"https://api.github.com/user/repos{?type,page,per_page,sort}","starred_url":"https://api.github.com/user/starred{/owner}{/repo}","starred_gists_url":"https://api.github.com/gists/starred","topic_search_url":"https://api.github.com/search/topics?q={query}{&page,per_page}","user_url":"https://api.github.com/users/{user}","user_organizations_url":"https://api.github.com/user/orgs","user_repositories_url":"https://api.github.com/users/{user}/repos{?type,page,per_page,sort}","user_search_url":"https://api.github.com/search/users?q={query}{&page,per_page,sort,order}"}
+2025-07-09T00:25:12.0337592Z ***************************************************************************************************************
+2025-07-09T00:25:12.0337626Z Http request 'GET' to https://api.github.com succeed
+2025-07-09T00:25:12.0337660Z ***************************************************************************************************************
+2025-07-09T00:25:12.0337673Z 
+2025-07-09T00:25:12.0337696Z 
+2025-07-09T00:25:12.0396675Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0397379Z 58186975
+2025-07-09T00:25:12.0397450Z 0
+2025-07-09T00:25:12.0397473Z 0
+2025-07-09T00:25:12.0397493Z Dispose
+2025-07-09T00:25:12.0397514Z Disposing pool.
+2025-07-09T00:25:12.0397536Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0402612Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0402799Z 58186975
+2025-07-09T00:25:12.0402841Z 12302711
+2025-07-09T00:25:12.0402870Z 0
+2025-07-09T00:25:12.0402898Z Dispose
+2025-07-09T00:25:12.0402919Z Connection closing.
+2025-07-09T00:25:12.0402945Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0403666Z [START System.Net.Http - ConnectionClosed]
+2025-07-09T00:25:12.0403772Z 1
+2025-07-09T00:25:12.0403810Z 1
+2025-07-09T00:25:12.0403867Z 0
+2025-07-09T00:25:12.0403886Z [END System.Net.Http - ConnectionClosed]
+2025-07-09T00:25:12.0404691Z [START Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:12.0404754Z 58186975
+2025-07-09T00:25:12.0404780Z 0
+2025-07-09T00:25:12.0404799Z 0
+2025-07-09T00:25:12.0404816Z CheckForHttp11ConnectionInjection
+2025-07-09T00:25:12.0404847Z Available HTTP/1.1 connections: 0, Requests in the queue: 0, Requests without a connection attempt: 0, Pending HTTP/1.1 connections: 0, Total associated HTTP/1.1 connections: 0, Max HTTP/1.1 connection limit: 2147483647, Will inject connection: False.
+2025-07-09T00:25:12.0404868Z [END Private.InternalDiagnostics.System.Net.Http - HandlerMessage]
+2025-07-09T00:25:11.5031868Z ***************************************************************************************************************
+2025-07-09T00:25:11.5032016Z ****                                                                                                       ****
+2025-07-09T00:25:11.5032032Z ****     Try ping api.github.com 
+2025-07-09T00:25:11.5032672Z ****                                                                                                       ****
+2025-07-09T00:25:11.5032683Z ***************************************************************************************************************
+2025-07-09T00:25:16.4642376Z Ping api.github.com (0.0.0.0) failed with 'TimedOut'

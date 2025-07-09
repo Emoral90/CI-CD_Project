@@ -1,0 +1,149 @@
+2025-07-09T00:25:21.4748869Z ***************************************************************************************************************
+2025-07-09T00:25:21.4748911Z ****                                                                                                       ****
+2025-07-09T00:25:21.4748919Z ****     !!! WARNING !!! 
+2025-07-09T00:25:21.4748923Z ****     DO NOT share the log in public place! The log may contains secrets in plain text. 
+2025-07-09T00:25:21.4748928Z ****     !!! WARNING !!! 
+2025-07-09T00:25:21.4748940Z ****                                                                                                       ****
+2025-07-09T00:25:21.4748944Z ***************************************************************************************************************
+2025-07-09T00:25:21.4812891Z ***************************************************************************************************************
+2025-07-09T00:25:21.4812941Z ****                                                                                                       ****
+2025-07-09T00:25:21.4812947Z ****     Validate server cert and proxy configuration with Git 
+2025-07-09T00:25:21.4813048Z ****                                                                                                       ****
+2025-07-09T00:25:21.4813053Z ***************************************************************************************************************
+2025-07-09T00:25:21.4986425Z Run 'git  ls-remote --exit-code https://gh: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@github.com/actions/checkout HEAD' 
+2025-07-09T00:25:21.5888148Z 17:25:21.583676 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+2025-07-09T00:25:21.5960582Z 17:25:21.595090 git.c:463               trace: built-in: git ls-remote --exit-code https://gh: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@github.com/actions/checkout HEAD
+2025-07-09T00:25:21.5968856Z 17:25:21.595939 run-command.c:659       trace: run_command: GIT_DIR=.git git remote-https https://gh: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@github.com/actions/checkout https://gh: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@github.com/actions/checkout
+2025-07-09T00:25:21.6134276Z 17:25:21.611941 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+2025-07-09T00:25:21.6146483Z 17:25:21.613943 git.c:749               trace: exec: git-remote-https https://gh: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@github.com/actions/checkout https://gh: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@github.com/actions/checkout
+2025-07-09T00:25:21.6147640Z 17:25:21.613943 run-command.c:659       trace: run_command: git-remote-https https://gh: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@github.com/actions/checkout https://gh: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@github.com/actions/checkout
+2025-07-09T00:25:21.6344343Z 17:25:21.633004 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+2025-07-09T00:25:21.6633809Z 17:25:21.662236 http.c:870              == Info:   Trying 140.82.116.4:443...
+2025-07-09T00:25:21.7004978Z 17:25:21.699100 http.c:870              == Info: Connected to github.com (140.82.116.4) port 443
+2025-07-09T00:25:21.7045804Z 17:25:21.704103 http.c:870              == Info: ALPN: curl offers h2,http/1.1
+2025-07-09T00:25:21.7078941Z 17:25:21.705617 http.c:870              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+2025-07-09T00:25:21.9790768Z 17:25:21.977785 http.c:870              == Info:  CAfile: C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+2025-07-09T00:25:21.9790793Z 17:25:21.977785 http.c:870              == Info:  CApath: none
+2025-07-09T00:25:21.9790797Z 17:25:21.978794 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+2025-07-09T00:25:21.9792763Z 17:25:21.978794 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+2025-07-09T00:25:21.9793070Z 17:25:21.978794 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+2025-07-09T00:25:21.9808791Z 17:25:21.980782 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+2025-07-09T00:25:21.9810153Z 17:25:21.980782 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+2025-07-09T00:25:21.9810635Z 17:25:21.980782 http.c:870              == Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+2025-07-09T00:25:21.9810997Z 17:25:21.980782 http.c:870              == Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+2025-07-09T00:25:21.9812647Z 17:25:21.980782 http.c:870              == Info: SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+2025-07-09T00:25:21.9812892Z 17:25:21.980782 http.c:870              == Info: ALPN: server accepted h2
+2025-07-09T00:25:21.9813030Z 17:25:21.980782 http.c:870              == Info: Server certificate:
+2025-07-09T00:25:21.9813181Z 17:25:21.980782 http.c:870              == Info:  subject: CN=github.com
+2025-07-09T00:25:21.9813309Z 17:25:21.980782 http.c:870              == Info:  start date: Feb  5 00:00:00 2025 GMT
+2025-07-09T00:25:21.9813473Z 17:25:21.980782 http.c:870              == Info:  expire date: Feb  5 23:59:59 2026 GMT
+2025-07-09T00:25:21.9813626Z 17:25:21.980782 http.c:870              == Info:  subjectAltName: host "github.com" matched cert's "github.com"
+2025-07-09T00:25:21.9813765Z 17:25:21.980782 http.c:870              == Info:  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo ECC Domain Validation Secure Server CA
+2025-07-09T00:25:21.9813889Z 17:25:21.980782 http.c:870              == Info:  SSL certificate verify ok.
+2025-07-09T00:25:21.9814863Z 17:25:21.980782 http.c:870              == Info: using HTTP/2
+2025-07-09T00:25:21.9815807Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] OPENED stream for https://gh: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@github.com/actions/checkout/info/refs?service=git-upload-pack
+2025-07-09T00:25:21.9816035Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [:method: GET]
+2025-07-09T00:25:21.9816159Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [:scheme: https]
+2025-07-09T00:25:21.9816288Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [:authority: github.com]
+2025-07-09T00:25:21.9816412Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [:path: /actions/checkout/info/refs?service=git-upload-pack]
+2025-07-09T00:25:21.9816616Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [user-agent: git/2.43.0.windows.1]
+2025-07-09T00:25:21.9816785Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [accept: */*]
+2025-07-09T00:25:21.9816919Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [accept-encoding: deflate, gzip, br, zstd]
+2025-07-09T00:25:21.9817102Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [pragma: no-cache]
+2025-07-09T00:25:21.9817226Z 17:25:21.980782 http.c:870              == Info: [HTTP/2] [1] [git-protocol: version=2]
+2025-07-09T00:25:21.9817591Z 17:25:21.980782 http.c:817              => Send header, 0000000216 bytes (0x000000d8)
+2025-07-09T00:25:21.9817647Z 17:25:21.980782 http.c:829              => Send header: GET /actions/checkout/info/refs?service=git-upload-pack HTTP/2
+2025-07-09T00:25:21.9817651Z 17:25:21.980782 http.c:829              => Send header: Host: github.com
+2025-07-09T00:25:21.9817706Z 17:25:21.980782 http.c:829              => Send header: User-Agent: git/2.43.0.windows.1
+2025-07-09T00:25:21.9817709Z 17:25:21.980782 http.c:829              => Send header: Accept: */*
+2025-07-09T00:25:21.9817712Z 17:25:21.980782 http.c:829              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+2025-07-09T00:25:21.9817715Z 17:25:21.980782 http.c:829              => Send header: Pragma: no-cache
+2025-07-09T00:25:21.9817718Z 17:25:21.980782 http.c:829              => Send header: Git-Protocol: version=2
+2025-07-09T00:25:21.9817721Z 17:25:21.980782 http.c:829              => Send header:
+2025-07-09T00:25:22.0170043Z 17:25:22.016525 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+2025-07-09T00:25:22.0170402Z 17:25:22.016525 http.c:870              == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+2025-07-09T00:25:22.0170716Z 17:25:22.016525 http.c:870              == Info: old SSL session ID is stale, removing
+2025-07-09T00:25:22.1045312Z 17:25:22.102684 http.c:817              <= Recv header, 0000000013 bytes (0x0000000d)
+2025-07-09T00:25:22.1045361Z 17:25:22.102684 http.c:829              <= Recv header: HTTP/2 200
+2025-07-09T00:25:22.1045369Z 17:25:22.102684 http.c:817              <= Recv header, 0000000026 bytes (0x0000001a)
+2025-07-09T00:25:22.1045376Z 17:25:22.102684 http.c:829              <= Recv header: server: GitHub-Babel/3.0
+2025-07-09T00:25:22.1045384Z 17:25:22.102684 http.c:817              <= Recv header, 0000000059 bytes (0x0000003b)
+2025-07-09T00:25:22.1045392Z 17:25:22.103689 http.c:829              <= Recv header: content-type: application/x-git-upload-pack-advertisement
+2025-07-09T00:25:22.1045400Z 17:25:22.103689 http.c:817              <= Recv header, 0000000054 bytes (0x00000036)
+2025-07-09T00:25:22.1045421Z 17:25:22.103689 http.c:829              <= Recv header: content-security-policy: default-src 'none'; sandbox
+2025-07-09T00:25:22.1045428Z 17:25:22.103689 http.c:817              <= Recv header, 0000000040 bytes (0x00000028)
+2025-07-09T00:25:22.1045435Z 17:25:22.103689 http.c:829              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+2025-07-09T00:25:22.1045441Z 17:25:22.103689 http.c:817              <= Recv header, 0000000018 bytes (0x00000012)
+2025-07-09T00:25:22.1045447Z 17:25:22.103689 http.c:829              <= Recv header: pragma: no-cache
+2025-07-09T00:25:22.1045453Z 17:25:22.103689 http.c:817              <= Recv header, 0000000053 bytes (0x00000035)
+2025-07-09T00:25:22.1045459Z 17:25:22.103689 http.c:829              <= Recv header: cache-control: no-cache, max-age=0, must-revalidate
+2025-07-09T00:25:22.1045465Z 17:25:22.103689 http.c:817              <= Recv header, 0000000023 bytes (0x00000017)
+2025-07-09T00:25:22.1045469Z 17:25:22.103689 http.c:829              <= Recv header: vary: Accept-Encoding
+2025-07-09T00:25:22.1045474Z 17:25:22.103689 http.c:817              <= Recv header, 0000000037 bytes (0x00000025)
+2025-07-09T00:25:22.1045480Z 17:25:22.103689 http.c:829              <= Recv header: date: Wed, 09 Jul 2025 00:25:22 GMT
+2025-07-09T00:25:22.1045568Z 17:25:22.103689 http.c:817              <= Recv header, 0000000023 bytes (0x00000017)
+2025-07-09T00:25:22.1045577Z 17:25:22.103689 http.c:829              <= Recv header: x-frame-options: DENY
+2025-07-09T00:25:22.1045585Z 17:25:22.103689 http.c:817              <= Recv header, 0000000073 bytes (0x00000049)
+2025-07-09T00:25:22.1045593Z 17:25:22.103689 http.c:829              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+2025-07-09T00:25:22.1045601Z 17:25:22.103689 http.c:817              <= Recv header, 0000000056 bytes (0x00000038)
+2025-07-09T00:25:22.1045608Z 17:25:22.103689 http.c:829              <= Recv header: x-github-request-id: A241:AAEA6:E88DDB:F05A4D:686DB6F2
+2025-07-09T00:25:22.1045616Z 17:25:22.103689 http.c:817              <= Recv header, 0000000002 bytes (0x00000002)
+2025-07-09T00:25:22.1045623Z 17:25:22.103689 http.c:829              <= Recv header:
+2025-07-09T00:25:22.1045630Z 17:25:22.103689 http.c:870              == Info: Connection #0 to host github.com left intact
+2025-07-09T00:25:22.1045637Z 17:25:22.103689 run-command.c:659       trace: run_command: 'git credential-manager store'
+2025-07-09T00:25:22.1825802Z 17:25:22.181614 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+2025-07-09T00:25:22.1837694Z 17:25:22.183598 git.c:749               trace: exec: git-credential-manager store
+2025-07-09T00:25:22.1838567Z 17:25:22.183598 run-command.c:659       trace: run_command: git-credential-manager store
+2025-07-09T00:25:22.2826033Z 17:25:22.281616 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+2025-07-09T00:25:22.2838376Z 17:25:22.283596 git.c:463               trace: built-in: git config --null --list
+2025-07-09T00:25:22.4422878Z 17:25:22.441840 http.c:870              == Info: Found bundle for host: 0x23b4c009fa0 [can multiplex]
+2025-07-09T00:25:22.4425004Z 17:25:22.441840 http.c:870              == Info: Re-using existing connection with host github.com
+2025-07-09T00:25:22.4425022Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] OPENED stream for https://gh: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@github.com/actions/checkout/git-upload-pack
+2025-07-09T00:25:22.4425237Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [:method: POST]
+2025-07-09T00:25:22.4425243Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [:scheme: https]
+2025-07-09T00:25:22.4425247Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [:authority: github.com]
+2025-07-09T00:25:22.4425252Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [:path: /actions/checkout/git-upload-pack]
+2025-07-09T00:25:22.4425423Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [user-agent: git/2.43.0.windows.1]
+2025-07-09T00:25:22.4425850Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [accept-encoding: deflate, gzip, br, zstd]
+2025-07-09T00:25:22.4426011Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [content-type: application/x-git-upload-pack-request]
+2025-07-09T00:25:22.4426031Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [accept: application/x-git-upload-pack-result]
+2025-07-09T00:25:22.4426073Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [git-protocol: version=2]
+2025-07-09T00:25:22.4426276Z 17:25:22.441840 http.c:870              == Info: [HTTP/2] [3] [content-length: 112]
+2025-07-09T00:25:22.4426294Z 17:25:22.441840 http.c:817              => Send header, 0000000288 bytes (0x00000120)
+2025-07-09T00:25:22.4426304Z 17:25:22.441840 http.c:829              => Send header: POST /actions/checkout/git-upload-pack HTTP/2
+2025-07-09T00:25:22.4426490Z 17:25:22.441840 http.c:829              => Send header: Host: github.com
+2025-07-09T00:25:22.4426497Z 17:25:22.441840 http.c:829              => Send header: User-Agent: git/2.43.0.windows.1
+2025-07-09T00:25:22.4426502Z 17:25:22.441840 http.c:829              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+2025-07-09T00:25:22.4426508Z 17:25:22.441840 http.c:829              => Send header: Content-Type: application/x-git-upload-pack-request
+2025-07-09T00:25:22.4426514Z 17:25:22.441840 http.c:829              => Send header: Accept: application/x-git-upload-pack-result
+2025-07-09T00:25:22.4426519Z 17:25:22.441840 http.c:829              => Send header: Git-Protocol: version=2
+2025-07-09T00:25:22.4426524Z 17:25:22.441840 http.c:829              => Send header: Content-Length: 112
+2025-07-09T00:25:22.4426528Z 17:25:22.441840 http.c:829              => Send header:
+2025-07-09T00:25:22.5739796Z 17:25:22.573179 http.c:817              <= Recv header, 0000000013 bytes (0x0000000d)
+2025-07-09T00:25:22.5745897Z 17:25:22.573179 http.c:829              <= Recv header: HTTP/2 200
+2025-07-09T00:25:22.5747490Z 17:25:22.573179 http.c:817              <= Recv header, 0000000026 bytes (0x0000001a)
+2025-07-09T00:25:22.5748029Z 17:25:22.573179 http.c:829              <= Recv header: server: GitHub-Babel/3.0
+2025-07-09T00:25:22.5748042Z 17:25:22.573179 http.c:817              <= Recv header, 0000000052 bytes (0x00000034)
+2025-07-09T00:25:22.5748219Z 17:25:22.573179 http.c:829              <= Recv header: content-type: application/x-git-upload-pack-result
+2025-07-09T00:25:22.5748323Z 17:25:22.573179 http.c:817              <= Recv header, 0000000054 bytes (0x00000036)
+2025-07-09T00:25:22.5748336Z 17:25:22.573179 http.c:829              <= Recv header: content-security-policy: default-src 'none'; sandbox
+2025-07-09T00:25:22.5748713Z 17:25:22.573179 http.c:817              <= Recv header, 0000000040 bytes (0x00000028)
+2025-07-09T00:25:22.5748824Z 17:25:22.573179 http.c:829              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+2025-07-09T00:25:22.5748835Z 17:25:22.573179 http.c:817              <= Recv header, 0000000018 bytes (0x00000012)
+2025-07-09T00:25:22.5748846Z 17:25:22.573179 http.c:829              <= Recv header: pragma: no-cache
+2025-07-09T00:25:22.5748855Z 17:25:22.573179 http.c:817              <= Recv header, 0000000053 bytes (0x00000035)
+2025-07-09T00:25:22.5748864Z 17:25:22.573179 http.c:829              <= Recv header: cache-control: no-cache, max-age=0, must-revalidate
+2025-07-09T00:25:22.5748872Z 17:25:22.573179 http.c:817              <= Recv header, 0000000023 bytes (0x00000017)
+2025-07-09T00:25:22.5750272Z 17:25:22.573179 http.c:829              <= Recv header: vary: Accept-Encoding
+2025-07-09T00:25:22.5750393Z 17:25:22.573179 http.c:817              <= Recv header, 0000000037 bytes (0x00000025)
+2025-07-09T00:25:22.5750408Z 17:25:22.573179 http.c:829              <= Recv header: date: Wed, 09 Jul 2025 00:25:22 GMT
+2025-07-09T00:25:22.5750427Z 17:25:22.573179 http.c:817              <= Recv header, 0000000023 bytes (0x00000017)
+2025-07-09T00:25:22.5750563Z 17:25:22.573179 http.c:829              <= Recv header: x-frame-options: DENY
+2025-07-09T00:25:22.5750577Z 17:25:22.573179 http.c:817              <= Recv header, 0000000073 bytes (0x00000049)
+2025-07-09T00:25:22.5752745Z 17:25:22.573179 http.c:829              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+2025-07-09T00:25:22.5753657Z 17:25:22.573179 http.c:817              <= Recv header, 0000000056 bytes (0x00000038)
+2025-07-09T00:25:22.5753730Z 17:25:22.573179 http.c:829              <= Recv header: x-github-request-id: A241:AAEA6:E88F86:F05C14:686DB6F2
+2025-07-09T00:25:22.5753746Z 17:25:22.573179 http.c:817              <= Recv header, 0000000002 bytes (0x00000002)
+2025-07-09T00:25:22.5753757Z 17:25:22.573179 http.c:829              <= Recv header:
+2025-07-09T00:25:22.6464668Z 17:25:22.645518 http.c:870              == Info: Connection #0 to host github.com left intact
+2025-07-09T00:25:22.6832887Z 09d2acae674a48949e3602304ab46fd20ae0c42f	HEAD

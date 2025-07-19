@@ -3,8 +3,16 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
+    paths: # Specify filepaths to control workflow
+      - "src/**" # Only run if files in src directory are changed
+      - "tests/**" # Only run if files in tests directory are changed
+      - ".github/workflows/demo1.yml" # Run if this workflow file is changed
   pull_request:
     branches: [ "main" ]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - ".github/workflows/demo1.yml" 
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -44,7 +52,7 @@ jobs:
         run: python3 tests/stress_test.py
 
       - name: Stop server running in background
-        run: pkill -f server.py || true
+        run: pkill -f src/server.py || true
 
     # This job will deploy to a staging environment after tests pass
   deploy-to-staging:

@@ -34,14 +34,14 @@ jobs:
 
       - name: Start local API server
         run: |
-          python3 server.py &
+          python3 src/server.py &
           sleep 3 # Wait for server to start up
 
       - name: Run API tests
-        run: pytest test_server.py
+        run: pytest tests/test_server.py
 
       - name: Run stress tests
-        run: python3 stress_test.py
+        run: python3 tests/stress_test.py
 
       - name: Stop server running in background
         run: pkill -f server.py || true

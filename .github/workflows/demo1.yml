@@ -74,11 +74,4 @@ jobs:
         run: |
           echo "Deploying to staging..."
           # Your deployment commands go here
-          # This might involve:
-          # - Copying files to a server (e.g., using scp, rsync)
-          # - Running a deployment script (e.g., Ansible, custom shell script)
-          # - Using an AWS CLI command (e.g., for S3 sync, CodeDeploy deployment)
-          # - Logging into a cloud provider and deploying (e.g., `aws deploy`, `gcloud deploy`)
-
-          # Example: A placeholder for actual deployment commands
           echo "Deployment to staging complete!"

@@ -42,7 +42,6 @@ jobs:
 
       - name: Start local API server
         run: |
-          cd src
           python3 server.py &
           sleep 3 # Wait for server to start up
 
@@ -53,7 +52,7 @@ jobs:
         run: python3 tests/stress_test.py
 
       - name: Stop server running in background
-        run: pkill -f src/server.py || true
+        run: pkill -f server.py || true
 
     # This job will deploy to a staging environment after tests pass
   deploy-to-staging:
@@ -61,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest # Or a specific runner for staging environment
     environment:
       name: staging
-      url: http://127.0.0.1:8790 # Optional: URL to your staging environment
+      url: http://127.0.0.1:8790 # URL to your staging environment
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

@@ -45,3 +45,65 @@ jobs:
 
       - name: Stop server running in background
         run: pkill -f server.py || true
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      # ... existing test steps from demo1.yml ...
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install requests pytest
+      - name: Start local API server
+        run: |
+          python3 server.py &
+          sleep 3 # Wait for server to start up
+      - name: Run API tests
+        run: pytest test_server.py
+      - name: Run stress tests
+        run: python3 stress_test.py
+      - name: Stop server running in background
+        run: pkill -f server.py || true
+
+  deploy-to-staging:
+    needs: test # This ensures deployment only runs after tests pass
+    runs-on: self-hosted # Or a specific runner for staging environment
+    environment:
+      name: staging
+      url: https://your-staging-url.com # Optional: URL to your staging environment
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        # If your build artifact is from the 'test' job, you'd download it here
+        # - name: Download build artifact
+        #   uses: actions/download-artifact@v4
+        #   with:
+        #     name: my-app-build
+
+      - name: Deploy to Staging Environment
+        run: |
+          echo "Deploying to staging..."
+          # Your deployment commands go here
+          # This might involve:
+          # - Copying files to a server (e.g., using scp, rsync)
+          # - Running a deployment script (e.g., Ansible, custom shell script)
+          # - Using an AWS CLI command (e.g., for S3 sync, CodeDeploy deployment)
+          # - Logging into a cloud provider and deploying (e.g., `aws deploy`, `gcloud deploy`)
+
+          # Example: A placeholder for actual deployment commands
+          echo "Deployment to staging complete!"

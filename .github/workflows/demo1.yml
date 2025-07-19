@@ -49,7 +49,7 @@ jobs:
     # This job will deploy to a staging environment after tests pass
   deploy-to-staging:
     needs: test # This ensures deployment only runs after tests pass
-    runs-on: self-hosted # Or a specific runner for staging environment
+    runs-on: ubuntu-latest # Or a specific runner for staging environment
     environment:
       name: staging
       url: http://127.0.0.1:8790 # Optional: URL to your staging environment

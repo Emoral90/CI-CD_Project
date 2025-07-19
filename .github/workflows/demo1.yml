@@ -46,19 +46,12 @@ jobs:
       - name: Stop server running in background
         run: pkill -f server.py || true
 
-# Controls when the workflow will run
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
-
+# This workflow contains jobs that will deploy to a staging environment
 jobs:
+  # Deploys the application to a staging environment
   test:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
-      # ... existing test steps from demo1.yml ...
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Set up Python

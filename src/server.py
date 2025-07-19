@@ -102,12 +102,12 @@ class ThreadingSimpleServer(ThreadingMixIn, HTTPServer):
 def run():
     global master_dict
 
-    if not os.path.exists('data.txt'):
-        print('Error the file "data.txt" not found')
+    if not os.path.exists('src/data.txt'):
+        print('Error the file "src/data.txt" not found')
         return
 
     # load dict
-    with open('data.txt') as f:
+    with open('src/data.txt') as f:
         data = f.read()
       
     # reconstructing the data as a dictionary

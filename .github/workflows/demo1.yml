@@ -54,7 +54,7 @@ jobs:
       - name: Stop server running in background
         run: pkill -f server.py || true
 
-    # This job will deploy to a staging environment after tests pass
+  # This job will deploy to a staging environment after tests pass
   deploy-to-staging:
     needs: test # This ensures deployment only runs after tests pass
     runs-on: ubuntu-latest # Or a specific runner for staging environment

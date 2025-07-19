@@ -46,39 +46,13 @@ jobs:
       - name: Stop server running in background
         run: pkill -f server.py || true
 
-# This workflow contains jobs that will deploy to a staging environment
-jobs:
-  # Deploys the application to a staging environment
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-      - name: Install dependencies
-        run: |
-          python3 -m pip install --upgrade pip
-          pip install requests pytest
-      - name: Start local API server
-        run: |
-          python3 server.py &
-          sleep 3 # Wait for server to start up
-      - name: Run API tests
-        run: pytest test_server.py
-      - name: Run stress tests
-        run: python3 stress_test.py
-      - name: Stop server running in background
-        run: pkill -f server.py || true
-
+    # This job will deploy to a staging environment after tests pass
   deploy-to-staging:
     needs: test # This ensures deployment only runs after tests pass
     runs-on: self-hosted # Or a specific runner for staging environment
     environment:
       name: staging
-      url: https://your-staging-url.com # Optional: URL to your staging environment
+      url: http://127.0.0.1:8790 # Optional: URL to your staging environment
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

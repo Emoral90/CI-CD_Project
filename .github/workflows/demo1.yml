@@ -40,7 +40,7 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install requests pytest
 
-      - name: Start local API server
+      - name: Start local API server 
         run: |
           python3 server.py &
           sleep 3 # Wait for server to start up
